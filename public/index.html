@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ChatProject</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+<style type="text/css">
+	
+.resvedUser{
+	color: red;
+}
+
+</style>
+ 
+</head>
+<body>
+
+<div data-role="firstPage">
+
+	<div data-role="header">
+		<h1>Group Chat</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<ul id="chatBoard"></ul>
+	</div><!-- /content -->
+
+	<div data-role="footer" style="position: fixed; bottom: 0; width: 100%;">
+<from>
+	<h4 id="isTyping"></h4>
+		<center>
+		<input id="inputchat" autocomplete="off" type="input" name="MassageInput" >
+	<button id="mybtn" type="submit">send</button>
+</from>
+		</center>
+	</div><!-- /footer -->
+</div><!-- /page -->
+ <script src="/MyJs.js"></script>
+
+</body>
+</html>
